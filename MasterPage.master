@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Reference Control="Client_User_Controls/HyperLinkUserControl.ascx" %>
+
+<asp:contentplaceholder id="head" runat="server">
+    </asp:contentplaceholder>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<div>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title></title>
+    </head>
+
+    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">   
+    </asp:contentplaceholder>
+    <body>
+
+        <div style="width: 20%; height: 100%; bottom: 0; position: fixed;">
+            <%--Левый блок--%>
+            <asp:PlaceHolder runat="server" ID="LinksPH"></asp:PlaceHolder>
+        </div>
+        <div style="width: 20%; height: 100%; bottom: 0; right: 0; position: fixed;">
+            <%--Правый блок--%>
+            <asp:PlaceHolder runat="server" ID="AbouPH"></asp:PlaceHolder>
+        </div>
+    </body>
+    </html>
+</div>
+
