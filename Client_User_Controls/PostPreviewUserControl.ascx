@@ -11,6 +11,9 @@
         <div id="post_text" style="font-size: 1.4em; margin: 10px">
             <asp:PlaceHolder runat="server" ID="contentPHText"></asp:PlaceHolder>
         </div>
+        <div id="post_stat" style="font-size: 1.4em; margin: 10px">
+            <asp:Label runat="server" ID="StatViews" Text="Views :"></asp:Label>
+            <asp:Label runat="server" ID="StatMess" Text="Messages :"></asp:Label>
+        </div>
     </div>
 </a>
-a
